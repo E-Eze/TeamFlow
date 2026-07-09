@@ -1,225 +1,316 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>TeamFlow</title>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TeamFlow</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet">
 
-    <link rel="stylesheet" href="./Styles/Index.css"/>
-
- <script src="./Script.Js" defer></script>
-
-
-
+   <link rel="stylesheet" href="./Styles/Index.css" />
 </head>
+
 <body>
 
-   <!--Header Section--> 
-
-   <div class="whole-page">
+   <!--Header Section-->
 
    <div class="top-section">
-
       <section id="header-area">
-         <header class="Header-section">
-        <img src="/Assets/Icons/TeamLogo.png" alt="Company Logo"/>
-            <nav> 
-               <ul class="nav-ul">
-               <li class="nav-list">
-                  <a href="#">Product</a>
-               </li>
+         <header class="header-section">
+            <img src="/Assets/Icons/Features-Icons/TeamLogo.png" alt="Company Logo" />
+            <nav>
+               <ul class="hd-nav-ul">
 
-               <li class="nav-list">
-                  <a href="#">Solution</a>
-               </li>
-               <li class="nav-list">
-                  <a href="#">Enterprise</a>
-               </li>
-               <li class="nav-list">
-                  <a href="#">Pricing</a>
-               </li>
+                  <li class="nav-list">
+                     <a href="#">Product</a>
+                  </li>
+
+                  <li class="nav-list">
+                     <a href="#">Solution</a>
+                  </li>
+
+                  <li class="nav-list">
+                     <a href="#">Enterprise</a>
+                  </li>
+
+                  <li class="nav-list">
+                     <a href="#">Pricing</a>
+                  </li>
+
                </ul>
             </nav>
 
-
-
             <div class="header-buttons">
-               <button class="btn">Login</button>
-               <button class="btn">Sign Up</button>
+               <a href class="nav-button">Login</a>
+               <button class="nav-button2">Sign Up</button>
             </div>
+
          </header>
       </section>
-   
 
-   <!--Hero Section-->
 
-      <section id="hero-area">
+      <!--Hero Section-->
 
-         <div class="hero-section">
+      <section class="hero">
 
-            <div class="hero-block">
+         <div class="hero-left">
 
-               <button class="btn">👋 Welcome to TeamFlow</button>
 
-                <h1>Work the way that <br>works for you</h1>
-
-                <p>Create, Build, Collaborate and ship <br> products faster</p>
-
-                <button class="btn">Get Started</button>
+            <div>
+               <button class="btn-buttons welcome-btn">👋 Welcome to TeamFlow</button>
             </div>
 
+            <h1 class="hero-heading">Work the way that <br>works for you</h1>
 
-            <div class="hero-img">
+            <span></span>
 
-               <div class=".lucy-img"><img src="./Assets/Icons/Hero-assets/Group 43.svg" 
-                  alt="image of customer, lucy">
-               </div>
+            <p class="hero-subheading">Create, Build, Collaborate and ship products <br> faster</p>
 
-               <div class="lucy-plan"><img src="./Assets/Icons/Hero-assets/Group 44.svg" 
-                  alt="lucy's comms plan">
-               </div>
-
-
-                <div class="mark-contract"><img src="./Assets/Icons/Hero-assets/Group 46.svg" 
-                  alt="Mark's contract agreement">
-               </div>
-
-
-               <div class="mark-img"><img src="./Assets/Icons/Hero-assets/Group 55.svg" 
-                  alt="image of customer, Mark">
-               </div>
-
-
-            </div>
+            <a class="btn-buttons cta-btn"
+               href="https://wa.me/2349012788029?text=Hello%2C%20I%20would%20like%20to%20contact%20TeamFlow"
+               target="_blank">
+               Get Started
+            </a>
          </div>
 
-       </section>
-       </div>
 
 
-       <!-- Benefits Area-->
-        <div class="benefits">
 
-               <div id="content-1">
-                  <p>See why over 100,000 teams choose <br>
-                  teamflow.com</p>
-                  <img src="/Assets/Icons/Companies.svg" alt="TeamFlow Customers"/>
-             </div>
+         <div class="hero-images">
 
-
-              
-
-             <div class="container">
-
-            
-               <div id="content-2">
-
-               <div class="sub-heading">
-               <h3 id="benefits-title">What you <strong style="color:#FFCA1D">can do</strong>
-               </h3>
-               </div>
-
-
-                     <article>
-                        <h3> Business Planning</h3>
-                        <p>Our Business Plan is a written document<br>
-                        describing a company’s core business <br>activities.</p>
-                  </article>
-               </div>
-         
-
-
-                  <div id="content-3">
-                     <article>
-                        <h3>Financial Planning</h3>
-                        <p>Our expert team sensible decision about their<br> money, to ensure
-                        they achieve the life goals. A<br> financial plan.</p>
-                     </article>
-                   </div>
-
-
-                  <div id="content-4">
-                     <article>
-                           <h3>Market Analysis
-                           </h3>
-
-                           <p>A market analysis is a quantitative <br>and qualitative assessment of a market. 
-                           It looks<br> into the size of the market.</p>
-                      </article>
-                  </div>
-               </div>
+            <div class="lucy-img"><img src="./Assets/Icons/Hero-assets/Group 43.svg" alt="image of customer"
+                  class="lucy">
             </div>
+
+            <div class="lucy-plan"><img src="./Assets/Icons/Hero-assets/Group 44.svg" alt="lucy's comms plan"
+                  class="lucy-cms">
+            </div>
+
+
+            <div class="mark-contract"><img src="./Assets/Icons/Hero-assets/Group 46.svg"
+                  alt="Mark's contract agreement" class="mark-cntrc">
+            </div>
+
+
+            <div class="mark-img"><img src="./Assets/Icons/Hero-assets/Group 55.svg" alt="image of customer"
+                  class="mark">
+            </div>
+
+         </div>
+
+      </section>
+
+   </div>
+
+   <!-- Benefits Area-->
+   <div class="benefits">
+
+      <div id="content-1">
+         <p>See why over 100,000 teams choose <br>
+            teamflow.com</p>
+         <img src="/Assets/Icons/Companies.svg" alt="TeamFlow Customers" />
+      </div>
+
+      <div class="sub-heading">
+         <h3 id="benefits-title">What you <strong style="color:#FFCA1D">can do?</strong>
+         </h3>
+      </div>
+
+
+
+
+      <div class="container">
+
+
+         <div class="wycd">
+            <article>
+
+               <div><img src="./Assets/Icons/Hero-section-Icons/graph_icon.svg" alt="graph_icon" /></div>
+               <h3> Business Planning</h3>
+               <p>Our Business Plan is a written document describing a company’s core business activities.</p>
+            </article>
+         </div>
+
+
+
+         <div class="wycd">
+            <article>
+
+
+               <div><img src="./Assets/Icons/Hero-section-Icons/financial_icon.svg" alt="financial_icon" />
+
+               </div>
+
+
+               <h3>Financial Planning</h3>
+               <p>Our expert team sensible decision about their money, to ensure
+                  they achieve the life goals. A financial plan.</p>
+            </article>
+         </div>
+
+
+         <div class="wycd">
+            <article>
+
+               <div><img src="./Assets/Icons/Hero-section-Icons/market_icon.svg" alt="market_icon" /></div>
+               <h3>Market Analysis
+               </h3>
+
+               <p>A market analysis is a quantitative and qualitative assessment of a market.
+                  It looks into the size of the market.</p>
+            </article>
+         </div>
+      </div>
+
+      <!-- <a href="https://wa.me/2349012788029?text=Hi there!%20I%20would%20like%20to%20speak%20to%20a%20sales-rep%20about%20setting%20up%20my%20company%20on%20Teamflow."
+            class="contact-btn" target="_blank">
+            <img src="./Assets/Icons/Contact-Us.png" alt="Contact me on WhatsApp">
+            Contact me
+         </a> -->
+   </div>
 
 
 
 
    <!--Features Section-->
 
-    <section id="features-area">
-               
-      <div class="features">
+
+   <div class="features">
+
+      <h2 class="features-title">Our <span style="color:#FFCA1D">Features</span>
+      </h2>
+
+      <div class="featurestext1 spin-img">
+
+         <div class="feature-image1">
+            <img src="./Assets/Icons/Features-Icons/Features-carousel.svg" alt="features-carousel" />
+         </div>
 
          <div id="F1">
-
-            <div class="sub-heading">
-            <h2>Our <strong style="color:#FFCA1D">Features</strong> </h2>
-          </div>
-
-
-            <h3>Manage everything in one workspace</h3>
+            <h3>Manage everything in one <br>workspace</h3>
             <p>Planning, tracking and delivering your team’s best work has never been easier.
-            An integrated workspace that’s simple to use, 
-            TeamFlow lets you spend less time managing your work 
-            and more time actually doing it.</p>
+               An integrated workspace that’s simple to use,
+               TeamFlow lets you spend less time managing your work
+               and more time actually doing it.</p>
          </div>
 
 
+      </div>
 
-          <div id="F2">
+
+      <div class="featurestext2">
+
+         <div class="feature-image2">
+            <img src="./Assets/Icons/Features-Icons/Team Collaboration Landing Page.svg"
+               alt="image of man holding a computer" />
+         </div>
+
+         <div id="F2">
             <h3>Set up in minutes</h3>
             <p>Get started fast with hundreds of visual and customizable templates - or create your own.
-                Use our free online template maker to create beautiful template in minutes.
-            Choose from hundreds of pre-made templates and tell stories with data
-            with our easy drag-and-drop infographic creator.</p> </div>
-             
-
-         <div id="F3" >
-            <h3>Integrate with your existing tools
-            in a few clicks</h3>
-              <div><button class="btn">View All</button>
-            </div>
+               Use our free online template maker to create beautiful template in minutes.
+               Choose from hundreds of pre-made templates and tell stories with data
+               with our easy drag-and-drop infographic creator.</p>
          </div>
-        
+
+      </div>
 
 
-          <div id="F4">
+
+
+      <div class="featurestext3">
+
+         <div id="F3">
+            <h3> <span style="color:#FFCA1D">Integrate</span> with your existing tools<br>
+               in a few clicks</h3>
+         </div>
+
+
+         <div class="feature-image3">
+            <img src="./Assets/Icons/Features-Icons/Group 66.svg" alt="tools" />
+         </div>
+
+         <div id="F3-button">
+            <button class="btn">View All</button>
+         </div>
+
+      </div>
+
+
+
+      <div class="featurestext4">
+
+         <div class="feature-image4">
+
+            <img src="./Assets/Icons/Features-Icons/Group 68.svg" alt="girl with phone" />
+
+         </div>
+
+
+         <div id="F4">
             <h3>Save time with Automations</h3>
-            <p>Automate the repetitive work in seconds so you can avoid human error and focus on what matters. 
-            It gives the impression of software that its highly automated which implies that it is good for client 
-            for who want to save time and manage team members easily.</p>
+            <p>Automate the repetitive work in seconds so you can avoid human error and focus on what matters.
+               It gives the impression of software that its highly automated which implies that it is good for client
+               for who want to save time and manage team members easily.</p>
          </div>
+
+
+      </div>
+
+
+
+      <div class="featurestext5">
+
 
          <div id="F5">
             <h3>Visualize work with Views</h3>
             <p>View data as a map, calendar, timeline, kanban, and more
-            The easy-to-use, visual interface lets any 
-            team member jump in and get started, 
-            no training required.</p>
+               The easy-to-use, visual interface lets any
+               team member jump in and get started,
+               no training required.</p>
          </div>
 
-         <div id="F6">
-            <h3>24/7 Customer Support</h3>
-            <p>Our team is here to give you personalized support within the hour available 24/7. 
-               In accordance with our commitment to providing superior and professional service.
-               Join daily live webinars, watch our tutorials, or browse through our knowledge 
-            base</p>
-            <div> <a class="button" href="">Read More</a>
-            </div>
-          </div>
-   
 
-       </div>
+         <div class="feature-image5">
+            <img src="./Assets/Icons/Features-Icons/Group 71.svg" />
+         </div>
+
+
+      </div>
+
+      <div class="featurestext6">
+
+
+         <div class="feature-image6">
+            <img src="./Assets/Icons/Features-Icons/Group 76.svg" alt="Image of Peter Fennimore" />
+         </div>
+
+
+         <div id="F6">
+
+            <h3>24/7 Customer Support</h3>
+            <p>Our team is here to give you personalized support within the hour available 24/7.
+               In accordance with our commitment to providing superior and professional service.
+               Join daily live webinars, watch our tutorials, or browse through our knowledge
+               base</p>
+
+
+            <a href="">
+               <a href="" class="btn">Read More</a>
+            </a>
+
+
+         </div>
+
+      </div>
+
+
+   </div>
 
    </section>
 
@@ -227,94 +318,133 @@
    <!--Testimonials section-->
    <section id="testimonials-area">
 
-         <div class="Testimonials">
-            <h2> Client <strong style="color:#FFCA1D">Testimonials</strong> </h2>
-            <img src="Assets/Icons/Client-Testimonials.svg" alt="client testimonials">
-         </div>
-     
+      <div class="testimonials">
+         <img src="Assets/Icons/Client-Testimonials.svg" alt="client testimonials">
+      </div>
 
-
-      <form>
-      <input type="email" id="email" name="email" required>
-      <button type="submit">Subscribe</button>
-      </form>
    </section>
+
+
+   <!--Subscribe-->
+
+   <div class="sign-up">
+      <div class="sign-up-content">
+         <p>Support</p>
+
+         <h1>
+            Subscribe Newsletter & get <br>
+            Company News
+         </h1>
+
+         <form id="Subscribe">
+            <input type="email" id="email" name="email" required placeholder="Your email">
+            <button class="btn" type="submit">Subscribe</button>
+         </form>
+      </div>
+   </div>
 
    <!--Footer section-->
    <footer>
 
+      <div class="first-line">
+
+         <img src="./Assets/Icons/Footer-icons/Company_Logo.svg" alt="company logo" />
+
          <div class="footer-area">
-            <p>All Rights Reserved © teamflow.com</p>
-       </div>
-
-      <div>
-            <h4>Address</h4>
-          <p>26 W 12th St. New York, NY 10342, NYC</p> 
-       </div>
-
-         <div>
-            <h4>Social Media</h4>
+            <p>All Rights Reserved &copy; teamflow.com</p>
          </div>
 
-      <div>
+         <div class="address">
+            <h4>Address</h4>
+            <p>26 W 12th St. New York, NY 10342, NYC</p>
+         </div>
+
+         <div class="social-media">
+            <h4>Social Media</h4>
+            <img src="./Assets/Icons/Footer-icons/Group 24.svg" alt="Twitter logo" />
+            <img src="./Assets/Icons/Footer-icons/Group 25.svg" alt="Instagram Logo" />
+            <img src="./Assets/Icons/Footer-icons/Group 26.svg" alt="Facebook Logo" />
+            <img src="./Assets/Icons/Footer-icons/Group 27.svg" alt="Youtube Logo" />
+         </div>
+
+      </div>
+
+      <div class="second-line">
          <h4>Product</h4>
          <ul>
-             <li>Product</li> 
-            <li>Pricing</li>  
-            <li>Enterprise</li>  
-            <li>Partners</li>  
-            <li>Affiliate</li>  
-            <li>Intergrations</li>  
-            <li>Developer</li>  
-            <li>Students</li>  
-            <li>Work OS</li>   
-          </ul>
+            <li>Product</li>
+            <li>Pricing</li>
+            <li>Enterprise</li>
+            <li>Partners</li>
+            <li>Affiliate</li>
+            <li>Intergrations</li>
+            <li>Developer</li>
+            <li>Students</li>
+            <li>Work OS</li>
+         </ul>
 
       </div>
 
-      <div>
+
+
+      <div class="third-line">
          <h4>Team</h4>
          <ul>
-            <li>About Us</li> 
-            <li>Contact Us</li>  
-            <li>Careers</li>  
-            <li>Find a Partner</li>  
-            <li>In the news</li>  
+            <li>About Us</li>
+            <li><a href="./form.html">Contact Us</a></li>
+            <li>Careers</li>
+            <li>Find a Partner</li>
+            <li>In the news</li>
          </ul>
       </div>
 
 
-      <div>
+      <div class="fourth-line">
          <h4>Solution</h4>
          <ul>
-            <li>Project Management</li> 
-            <li>Marketing</li>  
-            <li>CRM and Sales</li>  
-            <li>Software Development</li>  
-            <li>Constructions</li>  
-            <li>Creative Production</li>  
-            <li>Remote Work</li>  
-            <li>HR</li>  
-            <li>IT</li> 
+            <li>Project Management</li>
+            <li>Marketing</li>
+            <li>CRM and Sales</li>
+            <li>Software Development</li>
+            <li>Constructions</li>
+            <li>Creative Production</li>
+            <li>Remote Work</li>
+            <li>HR</li>
+            <li>IT</li>
+            <li>See more solutions</li>
          </ul>
       </div>
-            
-      <div>
+
+      <div class="fifth-line">
          <h4>Resources</h4>
          <ul>
-            <li>Knowledge Base</li> 
-            <li>Guides</li>  
-            <li>Daily webinars</li>  
-            <li>Community</li>  
-            <li>Customer Stories</li>  
-            <li>Templates</li>  
-            <li>Professional Services</li>  
-            <li>Video Tutorials</li>  
-            <li>Blog</li>  
-            <li>Podcast</li>   
+            <li>Knowledge Base</li>
+            <li>Guides</li>
+            <li>Daily webinars</li>
+            <li>Community</li>
+            <li>Customer Stories</li>
+            <li>Templates</li>
+            <li>Professional Services</li>
+            <li>Video Tutorials</li>
+            <li>Blog</li>
+            <li>Podcast</li>
          </ul>
       </div>
-</footer>
-</div>
+
+
+   </footer>
+
 </body>
+
+</html>
+
+
+
+<script>
+
+
+</script>
+
+</body>
+
 </html>

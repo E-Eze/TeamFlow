@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <link rel="stylesheet" href="./Styles/form.css">
+
+</head>
+
+<body>
+
+    <section class="contact-section">
+        <h2 id="title">Contact TeamFlow</h2>
+
+        <form class="contact-form">
+            <div class="form-field">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-field">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+            </div>
+
+            <div class="form-field">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required
+                    placeholder="Tell us how we can provide assistance"></textarea>
+            </div>
+
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </section>
+
+
+
+    <script>
+        emailjs.init({
+            publicKey: "KMZWem4Rs3PNYBx_2"
+        });
+
+        const form = document.querySelector(".contact-form");
+
+        if (!form) {
+            console.log("Form not found. Check your selector.");
+        }
+
+        form.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            emailjs.sendForm(
+                "service_cuzs0gv",
+                "template_te1jdif",
+                form
+            )
+                .then(function (response) {
+                    console.log("SUCCESS:", response);
+                    alert("Message sent successfully!");
+                    form.reset();
+                })
+                .catch(function (error) {
+                    console.log("FAILED:", error);
+                    alert(error.text || "Message failed to send. Check console.");
+                });
+        });
+    </script>
+
+
+</body>
+
+</html>
